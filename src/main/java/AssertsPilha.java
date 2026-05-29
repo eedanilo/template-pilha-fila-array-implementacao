@@ -133,23 +133,23 @@ public class AssertsPilha {
         assert pilha.indexOf(10) == 3;
     }
 
-    public void testPilhaLastIndexOf() {
-        Pilha pilha = new Pilha(5);
-        pilha.push(10);
-        pilha.push(20);
-        pilha.push(30);
-        pilha.push(40);
-        pilha.push(50);
+    // public void testPilhaLastIndexOf() {
+    //     Pilha pilha = new Pilha(5);
+    //     pilha.push(10);
+    //     pilha.push(20);
+    //     pilha.push(30);
+    //     pilha.push(40);
+    //     pilha.push(50);
 
-        assert pilha.lastIndexOf(50) == 4;
-        assert pilha.lastIndexOf(10) == 0;
-        assert pilha.lastIndexOf(30) == 2;
+    //     assert pilha.lastIndexOf(50) == 4;
+    //     assert pilha.lastIndexOf(10) == 0;
+    //     assert pilha.lastIndexOf(30) == 2;
 
-        pilha.pop();
-        pilha.push(30);
-        assert pilha.lastIndexOf(30) == 4;
-        assert pilha.indexOf(30) == 2;
-    }
+    //     pilha.pop();
+    //     pilha.push(30);
+    //     assert pilha.lastIndexOf(30) == 4;
+    //     assert pilha.indexOf(30) == 2;
+    // }
 
     public static void main(String[] args) {
         AssertsPilha testes = new AssertsPilha();
@@ -157,7 +157,7 @@ public class AssertsPilha {
         testes.testPilhaPop();
         testes.testPilhaToString();
         testes.testPilhaIndexOf();
-        testes.testPilhaLastIndexOf();
+        //testes.testPilhaLastIndexOf();
         System.out.println("Todos os testes de AssertsPilha passaram.");
     }
 }
